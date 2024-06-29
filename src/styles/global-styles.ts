@@ -8,8 +8,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    * {font-family: 'Avenir' !important;}
+    /* * {font-family: 'Avenir' !important;} */
   }
+  body:lang(en){
+    /* font-family: 'Avenir' !important */
+  }
+ 
   .w{
     max-width: 1200px;
     min-width: 375px;

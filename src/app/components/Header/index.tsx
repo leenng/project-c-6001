@@ -37,11 +37,11 @@ Header.defaultProps = {
 const Div = styled.div`
   position: fixed;
   top: 0px;
-  padding: 20px 0;
+  padding: 10px 0;
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   .w {
     padding: 0 10px;
@@ -55,8 +55,7 @@ const Div = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    height: 40px;
-    padding: 0 15px;
+    padding: 10px 15px;
     .logo {
       height: 30px;
     }

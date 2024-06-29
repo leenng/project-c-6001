@@ -1,7 +1,9 @@
 import React from 'react';
 import qrcode from 'images/qrcode.png';
-
+import { useTranslation } from 'react-i18next';
+import { messages } from 'locales/message';
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#222] pt-[34px] overflow-hidden ">
       <div className="w pl-[15px] pr-[15px] md:pl-0 md-pr-0">
@@ -36,7 +38,7 @@ const Footer = () => {
           </div>
           <div className="flex whitespace-nowrap w-full md:w-auto justify-between md:items-end md:flex-col">
             <div className="md:text-end">
-              <p className="text-2xl mb-3.5 font-bold text-white md:hidden">Contact Us</p>
+              <p className="text-2xl mb-3.5 font-bold text-white md:hidden">{t(...messages.contact())}</p>
               <p className="text-white font-md">Tel: +86 111 2341 5678</p>
               <p className="text-white font-md">Email: mgleme@163.com</p>
             </div>

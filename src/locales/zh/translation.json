@@ -1,5 +1,7 @@
 {
     "nav.home": "首页",
     "nav.about": "关于我们",
-    "nav.contact": "联系我们"
+    "nav.contact": "联系我们",
+    "news": "新闻",
+    "view.more": "查看更多"
 }

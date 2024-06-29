@@ -8,12 +8,12 @@ export function NotFoundPage() {
     <>
       <Helmet>
         <title>404</title>
-        <meta name='description' content='Page not found' />
+        <meta name="description" content="Page not found" />
       </Helmet>
       <Wrapper>
         <Title>
           4
-          <span role='img' aria-label='Crying Face'>
+          <span role="img" aria-label="Crying Face">
             😢
           </span>
           4
@@ -25,7 +25,7 @@ export function NotFoundPage() {
 }
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  margin-top: -8vh;
+  margin-top: 8vh;
   font-weight: bold;
   color: black;
   font-size: 3.375rem;
