@@ -40,9 +40,8 @@ const Div = styled.div`
   padding: 10px 0;
   left: 0;
   right: 0;
-
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 99;
   .w {
     padding: 0 10px;
     display: flex;

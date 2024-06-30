@@ -19,6 +19,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ConfigProvider } from 'antd';
 import { Contact } from './pages/Contact';
+import { AboutPage } from './pages/About';
 
 function App() {
   const { i18n } = useTranslation();
@@ -46,6 +47,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

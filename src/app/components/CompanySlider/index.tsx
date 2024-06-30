@@ -29,12 +29,19 @@ const list = [
   },
 ];
 
-const CompanySlider = () => {
+interface Props {
+  style?: React.CSSProperties;
+}
+const CompanySlider: React.FC<Props> = ({ style }) => {
   return (
     <div className="w-full overflow-x-auto md:flex md:space-x-[10px]">
       <div className="flex space-x-[10px] md:flex-1 ml-[16px] md:ml-0">
         {list.map(item => (
-          <div key={item.key} className="w-[42.6%] bg-white rounded-lg flex-shrink-0 md:w-[auto] md:flex-1">
+          <div
+            key={item.key}
+            style={style}
+            className="w-[42.6%] bg-white rounded-lg flex-shrink-0 md:w-[auto] md:flex-1"
+          >
             <div className="h-[40px] flex items-center justify-center border-b-[1px] border-black/10 md:h-[56px] ">
               <img className="max-h-[60%] max-w-[80%] border-b " src={item.imUrl} />
             </div>

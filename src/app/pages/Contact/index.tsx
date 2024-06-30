@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
               <span className="text-[18px] text-[#222]">Office address</span>
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
-            <p className="text-[11px] text-[#222] text-opacity-[0.7]">
+            <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
               Building A4, Room 1026, No. 246 Xilin Street, Zhujing Town, Jinshan District, Shanghai
             </p>
           </div>
@@ -41,8 +41,8 @@ const Contact: React.FC = () => {
               <span className="text-[18px] text-[#222]">Phone number</span>
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
-            <p className="text-[13px] font-bold mb-[10px]">General</p>
-            <p className="text-[11px] text-[#222] text-opacity-[0.7]">
+            <p className="text-[13px] font-bold mb-[10px] md:text-[15px]">General</p>
+            <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
               Building A4, Room 1026, No. 246 Xilin Street, Zhujing Town, Jinshan District, Shanghai
             </p>
           </div>
@@ -52,8 +52,8 @@ const Contact: React.FC = () => {
               <span className="text-[18px] text-[#222]">E-mail</span>
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
-            <p className="text-[13px] font-bold mb-[10px]">General</p>
-            <p className="text-[11px] text-[#222] text-opacity-[0.7]">ddwedewfew@gmail.com</p>
+            <p className="text-[13px] font-bold mb-[10px] md:text-[15px]">General</p>
+            <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">ddwedewfew@gmail.com</p>
           </div>
           <div className="px-[25px] py-[30px] bg-white rounded-md shadow-md ">
             <p className="flex items-center ">
@@ -61,8 +61,8 @@ const Contact: React.FC = () => {
               <span className="text-[18px] text-[#222]">Follow us</span>
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
-            <p className="text-[13px] font-bold mb-[10px]">General</p>
-            <p className="text-[11px] text-[#222] text-opacity-[0.7]">ddwedewfew@gmail.com</p>
+
+            <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">X</p>
           </div>
         </div>
       </div>
