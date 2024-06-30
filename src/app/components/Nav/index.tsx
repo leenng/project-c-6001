@@ -60,6 +60,7 @@ const Nav = () => {
   const navHandelClick = (item: { router: string }) => {
     setActive(item.router);
     navigate(item.router);
+    setOpen(false);
   };
 
   const navDom = () => (
