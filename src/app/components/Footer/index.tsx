@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="h-[1px] bg-white/10 w-full mt-[30px]"></div>
-      <div className="w pl-[15px] pr-[15px] md:pl-0 md-pr-0 text-white/40 text-[11px] pt-3 pb-3 md:text-center md:flex md:justify-between">
+      <div className="w pl-[15px] pr-[15px] md:pl-0 md-pr-0 text-white/40 text-[11px] pt-3 pb-3 md:text-center md:justify-between hidden md:hidden">
         <p className="mb-1.5 md:mb-0">
           Copyright &copy; 2024 RAYFIELD ELECTRONIC TECHNICAL SERVICE PTE.LTD. All rights reserved
         </p>

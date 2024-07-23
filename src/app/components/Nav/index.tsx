@@ -66,13 +66,13 @@ const Nav = () => {
   const navDom = () => (
     <Div>
       {nav.map(item => (
-        <button
+        <a
           onClick={() => navHandelClick(item)}
           key={item.label}
-          className={`fontf text-base ${active === item.router ? 'actived main-color' : ''}`}
+          className={`fontf block text-base ${active === item.router ? 'actived main-color' : ''}`}
         >
           {item.label}
-        </button>
+        </a>
       ))}
     </Div>
   );
@@ -99,20 +99,20 @@ const Nav = () => {
               <IoCloseCircleOutline size={30} color="rgba(0, 0, 0, 0.68)" onClick={() => setOpen(false)} />
             </div>
             <div className="flex-1">{navDom()}</div>
-            <div className="flex">
+            <div className="flex mb-6">
               {languageType.map((item, index) => {
                 return (
                   <>
                     <button
                       className={` ${
                         i18n.language === item.key ? 'text-[#2D7DFD]' : 'text-black/70'
-                      } border-0 bg-black/0 `}
+                      } border-0 bg-black/0 text-[15px]`}
                       key={item.key}
                       onClick={() => i18n.changeLanguage(item.key)}
                     >
                       {item.label}
                     </button>
-                    {index === 0 && <span className="text-black/20 pl-2 pr-2">|</span>}
+                    {index === 0 && <span className="text-black/20 pl-[20px] pr-[20px]">|</span>}
                   </>
                 );
               })}
@@ -134,11 +134,12 @@ const Div = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
-  button {
+  a {
     color: #fff;
     border: none;
     background-color: none;
     margin-right: 30px;
+    cursor: pointer;
     &.actived {
       font-weight: bold;
       color: #2d7dfd;
@@ -147,7 +148,7 @@ const Div = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    button {
+    a {
       margin-bottom: 1rem;
       margin-right: 0;
       color: #000;

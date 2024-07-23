@@ -1,7 +1,18 @@
 {
+  "index.banner.text1": "<p class='p1'></p><p class='p2'></p><p class='p3'></p>",
+  "index.service.title1": "服務範疇",
+  "index.service.title2": "上門服務",
+  "index.service.title3": "芯片級維修服務",
+  "index.service.title4": "售後服務整包",
+  "index.service.text1": "擁有專業人員在線指導團隊，可通過熱線電話或微信公眾號及時取得聯繫，提高服務效率。",
+  "index.service.text2": "專業技術人員上門安裝或維修各類電子產品，從家用电器到商用設備，快速修復故障設備，提高設備的正常使用率。",
+  "index.service.text3": "可將您的使用及維護成本降至最低，提供精確的故障診斷與修復，恢復備件的原廠性能，延長備件的使用壽命。",
+  "index.service.text4": "我們提供個性化定製的售後服務支持，包括在線電話客服、產品維修、技術支持、儲存服務、物流發貨、產品綠色環保報廢等全方位一體式服務。",
+  "index.aboutus.text": "雷菲爾德電子技術服務有限公司，自2023年起航於創新之島新加坡，致力於成為全球領先的電子產品綜合服務提供商。我們以客戶為中心，專注於電子產品技術功能完善、電子電路產品二級維修、電氣設備及設施安裝等任一專項服務和售後服務整包為一體的專業服務性公司，旨在為每一位用戶創造無憂的數字生活體驗。",
   "nav.home": "Home",
   "nav.about": "About Us",
   "nav.contact": "Contact Us",
   "news": "News",
-  "view.more": "View more"
+  "view.more": "View more",
+  "contact.compant.address": "Woods Square Tower 1, 12 Woodlands Square Singapore 737715 #11-69"
 }
