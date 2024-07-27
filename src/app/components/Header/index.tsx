@@ -13,14 +13,14 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ hideMenu }) => {
   const isMobile = useMediaQuery({ maxWidth: '768px' });
   return (
-    <Div className={`mx-auto`}>
+    <Div className={`mx-auto animate__animated  animate__fadeInDown`}>
       <div className="w">
-        <div>
+        <div className="animate__animated  animate__fadeInLeft">
           <img className={`logo `} src={logo} alt="logo" />
         </div>
         <div className="flex flex-1 ml-[9%] justify-end">{!hideMenu && <Nav />}</div>
         {!isMobile && (
-          <div>
+          <div className="animate__animated  animate__fadeInRight">
             <LanguageChange />
           </div>
         )}

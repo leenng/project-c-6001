@@ -27,6 +27,7 @@ import reportWebVitals from 'reportWebVitals';
 
 // Initialize languages
 import './locales/i18n';
+import 'styles/animated.css';
 
 const store = configureAppStore();
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

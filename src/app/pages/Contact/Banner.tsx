@@ -1,7 +1,7 @@
 import React from 'react';
 
-import bannerPc from 'images/banner-pc.png';
-import bannerMobile from 'images/banner-m.png';
+import BannerPc from 'images/banner-contact-pc.png';
+import bannerMobile from 'images/banner-contact-m.png';
 import styled from 'styled-components';
 
 import { useMediaQuery } from 'react-responsive';
@@ -15,7 +15,7 @@ const Banner = () => {
     <BannerContent className="w-full">
       <div
         className="content p-[10px] animate__animated animate__slideInUp"
-        dangerouslySetInnerHTML={{ __html: t(...messages.indexBannerText1()) }}
+        dangerouslySetInnerHTML={{ __html: t(...messages.contactBannerText()) }}
       ></div>
     </BannerContent>
   );
@@ -24,9 +24,9 @@ const Banner = () => {
 export { Banner };
 
 const BannerContent = styled.div`
-  background: url(${bannerPc}) no-repeat center center;
+  background: url(${BannerPc}) no-repeat center center;
   background-size: cover;
-  height: 640px;
+  height: 560px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -39,21 +39,14 @@ const BannerContent = styled.div`
     position: relative;
     z-index: 0;
   }
-  .p1 {
-    color: #2d7dfd;
+  .content {
+    max-width: 1200px;
+    position: relative;
+    top: 8%;
+    color: #fff;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
-  }
-  .p2 {
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  .p3 {
-    color: #fff;
-    opacity: 0.6;
-    font-size: 14px;
   }
 
   @media screen and (max-width: 768px) {
@@ -61,14 +54,8 @@ const BannerContent = styled.div`
     background-size: cover;
     height: auto;
     padding: 30% 0;
-    .p1 {
-      font-size: 34px;
-    }
-    .p2 {
-      font-size: 22px;
-    }
-    .p3 {
-      font-size: 13px;
+    .content {
+      font-size: 24px;
     }
   }
 `;

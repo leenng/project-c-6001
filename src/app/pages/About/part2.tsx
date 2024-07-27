@@ -1,71 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
 import arrow from 'images/arrow.png';
-const list = [
-  {
-    key: '1',
-    title: 'System Entry(CRM)',
-    desc: [
-      'Customer profile (individual, dealer, agent, seven days, DOA) set up with product received (name, Tel,address)',
-      'Product info collection, purchase voucher photo retention',
-      'System (CRM) entry, work order printing',
-    ],
-  },
-  {
-    key: '2',
-    title: 'Inspection and maintenance',
-    desc: [
-      'System (CRM) work order collection',
-      'Info check (individual, dealer, seven days, DOA)',
-      'Object and work order check + Inspection and maintenance',
-      'Test result input system',
-    ],
-  },
-  {
-    key: '3',
-    title: 'Warehouse(ERP)',
-    desc: [
-      'Product inventory application',
-      'Confirmation of arrival order and registration in ERP system.',
-      'Outbound, work order verification, work order product classification, record (ERP)',
-      'System (ERP) physical and quantity management confirmation of outbound goods',
-    ],
-  },
-  {
-    key: '4',
-    title: 'Delivery express logistics',
-    desc: [
-      'Physical check of work order ',
-      'System(CRM) records the express delivery information',
-      'Customer product logistics, express delivery completed',
-      'System work order confirmation completed.',
-    ],
-  },
-];
+import { useTranslation } from 'react-i18next';
+import { messages } from 'locales/message';
+
 const Part2 = () => {
+  const { t } = useTranslation();
+  const list = [
+    {
+      key: '1',
+      title: t(...messages.aboutWorkFolwTitle1()),
+      desc: [t(...messages.aboutWorkFolwText1())],
+    },
+    {
+      key: '2',
+      title: t(...messages.aboutWorkFolwTitle2()),
+      desc: [t(...messages.aboutWorkFolwText2())],
+    },
+    {
+      key: '3',
+      title: t(...messages.aboutWorkFolwTitle3()),
+      desc: [t(...messages.aboutWorkFolwText3())],
+    },
+    {
+      key: '4',
+      title: t(...messages.aboutWorkFolwTitle4()),
+      desc: [t(...messages.aboutWorkFolwText4())],
+    },
+    {
+      key: '5',
+      title: t(...messages.aboutWorkFolwTitle5()),
+      desc: [t(...messages.aboutWorkFolwText5())],
+    },
+  ];
   return (
     <Div className="py-[40px] lg:py-[70px]">
-      <p className="text-center text-[24px] mb-[28px] md:mb-[50px]">Workflow — Testing center</p>
+      <p className="text-center text-[24px] mb-[28px] md:mb-[50px]">{t(...messages.aboutWorkFolwH1Title())}</p>
       <div className="w px-[16px]">
         <div className="step">
           <div className="item">
             <div className="num">1</div>
-            <p>System Entry(CRM)</p>
+            <p>{t(...messages.aboutWorkFolwTitle1())}</p>
           </div>
           <div className="item">
             <div className="num">2</div>
-            <p>Inspection and maintenance</p>
+            <p>{t(...messages.aboutWorkFolwTitle2())}</p>
           </div>
           <div className="item">
             <div className="num">3</div>
-            <p>Warehouse</p>
+            <p>{t(...messages.aboutWorkFolwTitle3())}</p>
           </div>
           <div className="item">
             <div className="num">4</div>
-            <p>Delivery express logistics</p>
+            <p>{t(...messages.aboutWorkFolwTitle4())}</p>
+          </div>
+          <div className="item">
+            <div className="num">5</div>
+            <p>{t(...messages.aboutWorkFolwTitle5())}</p>
           </div>
         </div>
-        <div className="list grid gap-[15px] grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="list grid gap-[15px] grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
           {list.map(item => (
             <div key={item.key} className="bg-white px-[10px] py-[20px] rounded-md">
               <p className="flex items-center mb-[21px] lg:hidden">

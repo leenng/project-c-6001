@@ -108,7 +108,10 @@ const Nav = () => {
                         i18n.language === item.key ? 'text-[#2D7DFD]' : 'text-black/70'
                       } border-0 bg-black/0 text-[15px]`}
                       key={item.key}
-                      onClick={() => i18n.changeLanguage(item.key)}
+                      onClick={() => {
+                        i18n.changeLanguage(item.key);
+                        setOpen(false);
+                      }}
                     >
                       {item.label}
                     </button>

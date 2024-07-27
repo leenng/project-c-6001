@@ -20,4 +20,19 @@ export const GlobalStyle = createGlobalStyle`
     margin: auto;
   }
 
+  @keyframes fadeInDownCustom {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -40px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fadeInDownCustom {
+    animation-name: fadeInDownCustom;
+  }
 `;

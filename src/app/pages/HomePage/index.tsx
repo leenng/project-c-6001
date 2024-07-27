@@ -24,7 +24,7 @@ export function HomePage() {
     });
   }, [location]);
   return (
-    <HomeContent>
+    <HomeContent className="animate__animated animate__slow fadeInDownCustom">
       <Helmet>
         <title>{t(...messages.home())}</title>
       </Helmet>

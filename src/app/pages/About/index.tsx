@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banner } from './banner';
+import { Banner } from './Banner';
 import { Part1 } from './Part1';
 import { Part2 } from './part2';
 import { Part3 } from './part3';
@@ -18,14 +18,14 @@ const AboutPage = () => {
     });
   }, [location]);
   return (
-    <div>
+    <div className="animate__animated animate__slow fadeInDownCustom">
       <Helmet>
         <title>{t(...messages.about())}</title>
       </Helmet>
       <Banner />
       <Part1 />
       <Part2 />
-      <Part3 />
+      {/* <Part3 /> */}
     </div>
   );
 };
