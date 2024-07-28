@@ -37,10 +37,10 @@ const Footer = () => {
             </div> */}
           </div>
           <div className="flex whitespace-nowrap w-full md:w-auto justify-between md:items-end md:flex-col">
-            <div className="md:text-end">
-              <p className="text-2xl mb-3.5 font-bold text-white md:hidden">{t(...messages.contact())}</p>
-              <p className="text-white font-md">Email({t(...messages.codeSingapore())}): service@sg-rayfield.com</p>
-              <p className="text-white font-md">Email({t(...messages.codeChina())}): service@sh-leike.com</p>
+            <div className="md:text-end opacity-80">
+              <p className="text-xl mb-3.5 font-bold text-white md:hidden">{t(...messages.contact())}</p>
+              <p className="text-white font-md text-ms">Email: service@sg-rayfield.com <span className='text-xs'>({t(...messages.codeSingapore())})</span></p>
+              <p className="text-white font-md text-ms">Email: service@sh-leike.com  <span className='text-xs'>({t(...messages.codeChina())})</span></p>
             </div>
       
           </div>

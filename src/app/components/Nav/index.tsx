@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Drawer } from 'antd';
 import styled from 'styled-components';
 // import { ContextApp } from 'app/index';
@@ -102,12 +102,12 @@ const Nav = () => {
             <div className="flex mb-6">
               {languageType.map((item, index) => {
                 return (
-                  <>
+                  <Fragment  key={item.key}>
                     <button
                       className={` ${
                         i18n.language === item.key ? 'text-[#2D7DFD]' : 'text-black/70'
                       } border-0 bg-black/0 text-[15px]`}
-                      key={item.key}
+                     
                       onClick={() => {
                         i18n.changeLanguage(item.key);
                         setOpen(false);
@@ -116,7 +116,7 @@ const Nav = () => {
                       {item.label}
                     </button>
                     {index === 0 && <span className="text-black/20 pl-[20px] pr-[20px]">|</span>}
-                  </>
+                  </Fragment>
                 );
               })}
             </div>

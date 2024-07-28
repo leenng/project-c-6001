@@ -48,4 +48,7 @@ export const messages = {
   cityShanghai: () => _t(translations['city.shanghai']),
   codeSingapore: () => _t(translations['code.singapore']),
   codeChina: () => _t(translations['code.china']),
+  keywords: () => _t(translations["code.keywords"]),
+  desc: () => _t(translations["code.desc"]),
+  title: () => _t(translations["code.title"]),
 };

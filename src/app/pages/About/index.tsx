@@ -20,7 +20,7 @@ const AboutPage = () => {
   return (
     <div className="">
       <Helmet>
-        <title>{t(...messages.about())}</title>
+        <title>{t(...messages.about())}-{t(...messages.title())}</title>
       </Helmet>
       <Banner />
       <Part1 />

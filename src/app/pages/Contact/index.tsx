@@ -45,13 +45,13 @@ const Contact: React.FC = () => {
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
             <div className=" leading-8">
-              <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.citySingapore())}: {t(...messages.contactCompanyAddressSingapore())}
               </p>
-              <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.cityBeijing())}: {t(...messages.contactCompanyAddressBeijing())}
               </p>
-              <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.cityShanghai())}: {t(...messages.contactCompanyAddressShanghai())}
               </p>
             </div>
@@ -64,13 +64,13 @@ const Contact: React.FC = () => {
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
             {/* <p className="text-[13px] font-bold mb-[10px] md:text-[15px]">General</p> */}
             <div className="leading-8">
-              <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.codeSingapore())}:{' '}
                 <a className="text-blue-600" href="mailto:service@sg-rayfield.com">
                   service@sg-rayfield.com
                 </a>
               </p>
-              <p className="text-[11px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.codeChina())}:{' '}
                 <a className="text-blue-600" href="mailto: service@sh-leike.com">
                   service@sh-leike.com

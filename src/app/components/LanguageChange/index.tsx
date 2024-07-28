@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { DownOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 export const items = [
-  { key: 'zh-CN', label: '中文' },
-  { key: 'en-US', label: 'English' },
+  { key: 'zh', label: '中文' },
+  { key: 'en', label: 'English' },
 ];
 const LanguageChange: React.FC = () => {
   const { t, i18n } = useTranslation();

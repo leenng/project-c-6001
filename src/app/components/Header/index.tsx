@@ -6,6 +6,7 @@ import { LanguageChange } from 'app/components/LanguageChange';
 import { useMediaQuery } from 'react-responsive';
 
 import logo from 'images/logo.png';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   hideMenu?: boolean;
@@ -16,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ hideMenu }) => {
     <Div className={`mx-auto animate__animated  animate__fadeInDown`}>
       <div className="w">
         <div className="animate__animated  animate__fadeInLeft">
-          <img className={`logo `} src={logo} alt="logo" />
+          <Link to="/" ><img className={`logo `} src={logo} alt="logo" /></Link>
         </div>
         <div className="flex flex-1 ml-[9%] justify-end">{!hideMenu && <Nav />}</div>
         {!isMobile && (
