@@ -14,7 +14,7 @@ const Banner = () => {
   return (
     <BannerContent className="w-full">
       <div
-        className="content p-[10px] animate__animated animate__slideInUp"
+        className="content p-[1px] animate__animated animate__slideInUp"
         dangerouslySetInnerHTML={{ __html: t(...messages.indexBannerText1()) }}
       ></div>
     </BannerContent>

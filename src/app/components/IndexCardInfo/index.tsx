@@ -12,7 +12,7 @@ const IndexCardInfo = () => {
   const list = [
     {
       key: '1',
-      imUrl: iconChip,
+      imUrl: iconService,
       title: t(...messages.indexServiceTitle1()),
       desc: t(...messages.indexServiceText1()),
     },
@@ -30,7 +30,7 @@ const IndexCardInfo = () => {
     },
     {
       key: '4',
-      imUrl: iconService,
+      imUrl: iconPrint,
       title: t(...messages.indexServiceTitle4()),
       desc: t(...messages.indexServiceText4()),
     },
