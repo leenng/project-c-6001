@@ -36,6 +36,7 @@ export function HomePage() {
       </div>
       <IndexAbout />
       {/* <IndexNews /> */}
+      <Footer />
     </HomeContent>
   );
 }

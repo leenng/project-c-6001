@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Banner } from './Banner';
 import { useMediaQuery } from 'react-responsive';
 
@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { messages } from 'locales/message';
 import { useLocation } from 'react-router-dom';
+import { Footer } from 'app/components/Footer';
 const Contact: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: '768px' });
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ const Contact: React.FC = () => {
     });
   }, [location]);
   return (
+    <Fragment>
     <div className="bg-[#f8f8f8]">
       <Helmet>
         <title>{t(...messages.contact())}</title>
@@ -102,6 +104,8 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </Fragment>
   );
 };
 

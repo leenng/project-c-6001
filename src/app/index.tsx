@@ -64,7 +64,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
         <GlobalStyle />
       </BrowserRouter>
     </ConfigProvider>
