@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banner } from './Banner';
+import { Banner } from './banners';
 import { Part1 } from './Part1';
 import { Part2 } from './part2';
 import { Part3 } from './part3';
