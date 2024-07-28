@@ -12,7 +12,7 @@ const Banner = () => {
   const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: '768px' });
   return (
-    <BannerContent className="w-full">
+    <BannerContent className="w-full animate__animated animate__slow fadeInDownCustom">
       <div
         className="content p-[1px] animate__animated animate__slideInUp"
         dangerouslySetInnerHTML={{ __html: t(...messages.indexBannerText1()) }}

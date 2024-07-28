@@ -12,8 +12,8 @@ const Banner = () => {
   const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: '768px' });
   return (
-    <BannerContent className="w-full">
-      <div className='contents p-[10px] animate__animated animate__slideInUp'>{t(...messages.contact())}</div>
+    <BannerContent className="w-full animate__animated animate__slow fadeInDownCustom">
+      <div className="contents p-[10px] animate__animated animate__slideInUp">{t(...messages.contact())}</div>
       <div
         className="content p-[10px] animate__animated animate__slideInUp"
         dangerouslySetInnerHTML={{ __html: t(...messages.contactBannerText()) }}
@@ -47,7 +47,7 @@ const BannerContent = styled.div`
     color: #fff;
     font-size: 16px !important;
     margin-bottom: 10px;
-    opacity:0.8;
+    opacity: 0.8;
   }
 
   .contents {
@@ -59,8 +59,6 @@ const BannerContent = styled.div`
     font-size: 35px !important;
     margin-bottom: 10px;
   }
-  
-
 
   @media screen and (max-width: 768px) {
     background: url(${bannerMobile}) no-repeat center center;

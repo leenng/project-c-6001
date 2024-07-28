@@ -18,11 +18,11 @@ const Contact: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   }, [location]);
   return (
-    <div className="bg-[#f8f8f8] animate__animated animate__slow fadeInDownCustom">
+    <div className="bg-[#f8f8f8]">
       <Helmet>
         <title>{t(...messages.contact())}</title>
       </Helmet>

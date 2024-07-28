@@ -14,11 +14,11 @@ const AboutPage = () => {
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   }, [location]);
   return (
-    <div className="animate__animated animate__slow fadeInDownCustom">
+    <div className="">
       <Helmet>
         <title>{t(...messages.about())}</title>
       </Helmet>
