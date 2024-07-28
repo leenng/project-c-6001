@@ -20,11 +20,11 @@ export function HomePage() {
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   }, [location]);
   return (
-    <HomeContent className="animate__animated animate__slow fadeInDownCustom">
+    <HomeContent className="">
       <Helmet>
         <title>{t(...messages.home())}</title>
       </Helmet>
