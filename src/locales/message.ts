@@ -51,4 +51,9 @@ export const messages = {
   keywords: () => _t(translations["code.keywords"]),
   desc: () => _t(translations["code.desc"]),
   title: () => _t(translations["code.title"]),
+  serve1: () => _t(translations["code.serve1"]),
+  serve2: () => _t(translations["code.serve2"]),
+  serve3: () => _t(translations["code.serve3"]),
+  serve4: () => _t(translations["code.serve4"]),
+  
 };

@@ -39,6 +39,14 @@ const Contact: React.FC = () => {
         </div>
       </div> */}
       <div className="w py-[45px] px-[16px] md:py-[95px]">
+          <div
+            className="text-[22px]  mb-[25px]  text-center"
+            dangerouslySetInnerHTML={{ __html:t(...messages.contactBannerText())  }}
+          ></div>
+           <div
+            className="text-[14px]  mb-[25px] md:text-left md:text-[16px]"
+            dangerouslySetInnerHTML={{ __html: t('contact.banner.content') }}
+          ></div>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[16px] ">
           <div className="px-[25px] py-[30px] bg-white rounded-md shadow-md lg:col-span-2">
             <p className="flex items-center ">
@@ -47,13 +55,13 @@ const Contact: React.FC = () => {
             </p>
             <div className="h-[1px] bg-black/10 mt-[14px] mb-[20px]"></div>
             <div className=" leading-8">
-              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.citySingapore())}: {t(...messages.contactCompanyAddressSingapore())}
               </p>
-              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.cityBeijing())}: {t(...messages.contactCompanyAddressBeijing())}
               </p>
-              <p className="text-[12px] text-[#222] text-opacity-[0.7] md:text-[15px]">
+              <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.cityShanghai())}: {t(...messages.contactCompanyAddressShanghai())}
               </p>
             </div>

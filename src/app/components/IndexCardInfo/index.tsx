@@ -6,6 +6,7 @@ import iconPrint from 'images/icon-print.png';
 import iconService from 'images/icon-service.png';
 import { messages } from 'locales/message';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const IndexCardInfo = () => {
   const { t, i18n } = useTranslation();
@@ -42,9 +43,11 @@ const IndexCardInfo = () => {
           key={item.key}
           className=" text-[#222] text-center rounded-lg shadow-md bg-[#f1f1f1] p-[15px] md:px-[27px] md:py-[50px]"
         >
-          <img className="h-[39px] mb-[10px] block m-auto md:h-[60px] md:mb-[25px]" src={item.imUrl} alt="img" />
-          <p className="text-[15px] font-bold mb-[17px] md:text-[18px] md:mb-[27px] ">{item.title}</p>
-          <p className=" text-[12px] opacity-[0.6] md:text-[14px]">{item.desc}</p>
+          <Link to={`/detail/${item.key}`}>
+              <img className="h-[39px] mb-[10px] block m-auto md:h-[60px] md:mb-[25px]" src={item.imUrl} alt="img" />
+              <p className="text-[15px] font-bold mb-[17px] md:text-[18px] md:mb-[27px] ">{item.title}</p>
+              <p className=" text-[12px] opacity-[0.6] md:text-[14px]">{item.desc}</p>
+          </Link>
         </div>
       ))}
     </div>

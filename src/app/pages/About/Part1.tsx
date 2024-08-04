@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import about01 from 'images/about-1.png';
-import iconIt from 'images/icon-it.png';
-import iconProduct from 'images/icon-product.png';
-import iconFlash from 'images/icon-falsh.png';
-import iconSet from 'images/icon-set.png';
+import iconChip from 'images/icon-chip.png';
+import icon3C from 'images/icon-3c.png';
+import iconPrint from 'images/icon-print.png';
 import iconService from 'images/icon-service.png';
+
 import { CompanySlider } from 'app/components/CompanySlider';
 import { useTranslation } from 'react-i18next';
 import { messages } from 'locales/message';
@@ -23,26 +24,37 @@ const Part1 = () => {
             dangerouslySetInnerHTML={{ __html: t(...messages.aboutText()) }}
           ></div>
           <div className="flex gap-[1%] flex-wrap justify-between">
+           
+              <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[49%] mb-[10px] md:w-[32.333%] ">
+              <Link to={`/detail/1`}>
+                <img src={iconService} alt="it" className="h-[26px] block m-auto mb-[10px] md:h-[32px]" />
+                <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle1())}</p>
+              </Link>
+               
+              </div>
+           
+           
             <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[49%] mb-[10px] md:w-[32.333%] ">
-              <img src={iconIt} alt="it" className="h-[26px] block m-auto mb-[10px] md:h-[32px]" />
-              <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle1())}</p>
-            </div>
-            <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[49%] mb-[10px] md:w-[32.333%] ">
-              <img src={iconProduct} alt="it" className="h-[26px] block m-auto mb-[10px]  md:h-[32px]" />
+            <Link to={`/detail/2`}>
+              <img src={icon3C} alt="it" className="h-[26px] block m-auto mb-[10px]  md:h-[32px]" />
               <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle2())}</p>
+            </Link>
+             
             </div>
+           
             <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[49%] mb-[10px] md:w-[32.333%] ">
-              <img src={iconFlash} alt="it" className="h-[26px] block m-auto mb-[10px]  md:h-[32px]" />
-              <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle3())}</p>
+              <Link to={`/detail/3`}>
+                <img src={iconChip} alt="it" className="h-[26px] block m-auto mb-[10px]  md:h-[32px]" />
+                <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle3())}</p>
+              </Link>
             </div>
             <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[49%] mb-[10px] md:mb-[0px]  ">
-              <img src={iconSet} alt="it" className="h-[26px] block m-auto mb-[10px] md:h-[32px]" />
-              <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle4())}</p>
+              <Link to={`/detail/4`}>
+                <img src={iconPrint} alt="it" className="h-[26px] block m-auto mb-[10px] md:h-[32px]" />
+                <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle5())}</p>
+              </Link>
             </div>
-            <div className="p-[20px] bg-[#f8f8f8] rounded-md w-[100%] md:w-[49%] ">
-              <img src={iconService} alt="it" className="h-[26px] block m-auto mb-[10px]  md:h-[32px]" />
-              <p className="text-xs text-center md:text-[14px]">{t(...messages.aboutIconTitle5())}</p>
-            </div>
+            
           </div>
         </div>
         <div className="hidden ml-[110px] lg:block">

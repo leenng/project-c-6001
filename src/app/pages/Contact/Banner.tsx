@@ -14,10 +14,6 @@ const Banner = () => {
   return (
     <BannerContent className="w-full animate__animated animate__slow fadeInDownCustom">
       <div className="contents p-[10px] animate__animated animate__slideInUp">{t(...messages.contact())}</div>
-      <div
-        className="content p-[10px] animate__animated animate__slideInUp"
-        dangerouslySetInnerHTML={{ __html: t(...messages.contactBannerText()) }}
-      ></div>
     </BannerContent>
   );
 };

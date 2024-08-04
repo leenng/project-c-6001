@@ -21,8 +21,7 @@ import { ConfigProvider } from 'antd';
 import { Contact } from './pages/Contact';
 import { AboutPage } from './pages/About';
 import { messages } from 'locales/message';
-import { useLocation, useParams } from 'react-router-dom';
-
+import { Detail } from './pages/Detail'
 function App() {
   const { t,i18n } = useTranslation();
   const pageTile = `%s - ${t(...messages.title())}`;
@@ -63,6 +62,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/detail/:id" element={<Detail />} />
         </Routes>
         <GlobalStyle />
       </BrowserRouter>
