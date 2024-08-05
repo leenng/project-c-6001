@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
               </p>
               <p className="text-[14px] text-[#222] text-opacity-[0.7] md:text-[15px]">
                 {t(...messages.codeChina())}:{' '}
-                <a className="text-blue-600" href="mailto: service@sh-leike.com">
+                <a className="text-blue-600" href="mailto:service@sh-leike.com">
                   service@sh-leike.com
                 </a>
               </p>
