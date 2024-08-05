@@ -22,6 +22,7 @@ import { Contact } from './pages/Contact';
 import { AboutPage } from './pages/About';
 import { messages } from 'locales/message';
 import { Detail } from './pages/Detail'
+import '../styles/base.css'
 function App() {
   const { t,i18n } = useTranslation();
   const pageTile = `%s - ${t(...messages.title())}`;
