@@ -8,42 +8,15 @@ const Footer = () => {
     <div className="bg-[#222] pt-[34px] overflow-hidden ">
       <div className="w pl-[15px] pr-[15px] md:pl-0 md-pr-0">
         <div className="flex justify-between">
-          <div className="hidden md:block md:w-full">
-            {/* <div className="flex">
-              <div className="mr-[100px]">
-                <p className="text-[16px] mb-1.5 text-white">About Us</p>
-                <p>
-                  <a className="text-white/60 ">company1</a>
-                </p>
-                <p>
-                  <a className="text-white/60 ">company1</a>
-                </p>
-              </div>
-              <div className="mr-[100px]">
-                <p className="text-[16px] mb-1.5 text-white">About Us</p>
-                <p>
-                  <a className="text-white/60 ">company1</a>
-                </p>
-                <p>
-                  <a className="text-white/60 ">company1</a>
-                </p>
-              </div>
-              <div>
-                <p className="text-[16px] mb-1.5 text-white">Contact Us</p>
-                <p>
-                  <a className="text-white/60 ">company1</a>
-                </p>
-              </div>
-            </div> */}
-          </div>
-          <div className="flex whitespace-nowrap w-full md:w-auto justify-between md:items-end md:flex-col">
-            <div className="md:text-end opacity-80">
-              <p className="text-xl mb-3.5 font-bold text-white md:hidden">{t(...messages.contact())}</p>
-              <p className="text-white font-md text-ms">Email: <a className='text-blue-600' href="mailto:service@sg-rayfield.com">service@sg-rayfield.com</a> <span className='text-xs'> ({t(...messages.codeSingapore())})</span></p>
-              <p className="text-white font-md text-ms">Email: <a className='text-blue-600' href="mailto:service@sh-leike.com">service@sh-leike.com</a>  <span className='text-xs'> ({t(...messages.codeChina())})</span></p>
-            </div>
-      
-          </div>
+       
+        <div className="flex flex-col w-full md:w-auto">
+        <p className="text-xl mb-3.5 font-bold text-white md:hidden">{t(...messages.contact())}</p>
+        <div className="opacity-80">
+            <p className="text-white font-md text-ms">Email: <a className='text-blue-600' href="mailto:service@sg-rayfield.com">service@sg-rayfield.com</a> <span className='text-xs'> ({t(...messages.codeSingapore())})</span></p>
+            <p className="text-white font-md text-ms">Email: <a className='text-blue-600' href="mailto:service@sh-leike.com">service@sh-leike.com</a>  <span className='text-xs'> ({t(...messages.codeChina())})</span></p>
+        </div>
+        </div>
+         
         </div>
       </div>
       <div className="h-[1px] bg-white/10 w-full mt-[30px]"></div>

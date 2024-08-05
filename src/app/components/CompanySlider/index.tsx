@@ -53,14 +53,10 @@ const CompanySlider: React.FC<Props> = ({ style }) => {
             style={style}
             className="w-[42.6%] bg-white rounded-lg flex-shrink-0 md:w-[auto] md:flex-1"
           >
-            <div className="h-[40px] flex items-center justify-center border-b-[1px] border-black/10 md:h-[60px] ">
-              <img className="max-h-[70%] max-w-[80%]  " src={item.imUrl} />
+           <div className="h-[60px] p-2 flex items-center justify-center shadow-md">
+            <img className="max-h-[70%] max-w-[80%]" src={item.imUrl} />
             </div>
-            <div className="py-[7px] flex items-center justify-items-center justify-center md:py-[12px]">
-              <p className="leading-normal px-[15px] text-center text-[#222] opacity-[0.7] text-[11px] md:text-[14px] ">
-                {i18n.language === 'zh-CN' ? item.labelCn : item.labelEn}
-              </p>
-            </div>
+        
           </div>
         ))}
       </div>
